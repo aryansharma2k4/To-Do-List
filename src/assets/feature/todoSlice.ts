@@ -28,8 +28,9 @@ export const todoSlice = createSlice({
                 text: action.payload,
                 toggleCompleted: false,
             }
-            state.todos.push(todo)
-            console.log(todo);
+            if(todo.text){
+                state.todos.push(todo)
+            }
             
         },
         removeToDo: (state, action) => {
