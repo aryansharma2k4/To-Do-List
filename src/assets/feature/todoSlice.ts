@@ -6,9 +6,6 @@ interface Todo {
     toggleCompleted: boolean;
   }
   
-  interface TodoState {
-    todos: Todo[];
-  }
 
 const initialState = {
     todos : [{
@@ -46,7 +43,7 @@ export const todoSlice = createSlice({
             })
         },
         editToDo : (state, action) => {
-            const {id, name, toggleCompleted} = action.payload
+            const {id, name} = action.payload
             state.todos.map((todo) => {
                 if(todo.id === id){
                     todo.text = name

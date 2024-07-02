@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from "react-redux";
-import React, { useState } from "react";
+import  { useState } from "react";
 import { finishedToDo, removeToDo, editToDo } from "./feature/todoSlice";
 
 const ToDoList = () => {
@@ -11,6 +11,9 @@ const ToDoList = () => {
     text: string;
     toggleCompleted : boolean;
   }
+
+  console.log(newTodoData);
+  
 
   type StateType = {
     todos: Todo[];

@@ -1,5 +1,3 @@
-import React from 'react'
-import todoSlice from './assets/feature/todoSlice.ts'
 import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './index.css'
